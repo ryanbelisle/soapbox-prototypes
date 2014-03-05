@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Soapbox Petitions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<style>
+	body {
+		padding-top: 40px;
+		padding-bottom: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	<link href="../public/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/mixture.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/sbx-core.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/sbx-petitions.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/js/zozo.accordion.4.0/css/zozo.accordion.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+	<script src="../public/js/modernizr-latest.min.js"></script>
+
+	
+	<script src="../public/js/selectivizr.min.js"></script> 
+	<script src="../public/js/respond/respond.src.min.js"></script> 
+	<script src="../public/js/placeholders/placeholders.min.js"></script> 
+	<script src="../public/js/easypiechart/demo/excanvas.compiled.min.js"></script> 
+	
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Soapbox Petitions</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+
+					<li class="dropdown">
+						<a id="drop3" href="/model" role="button" class="dropdown-toggle" data-toggle="dropdown">Molecules <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">First Molecule</a></li>
+						</ul>
+					</li>
+
+
+					<li class="dropdown">
+						<a id="drop2" href="/model" role="button" class="dropdown-toggle" data-toggle="dropdown">Organizms <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">First Organizm</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a id="drop1" href="page-default(1col).html" role="button" class="dropdown-toggle" data-toggle="dropdown">Templates <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-default(1col).html">Default (1col)</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-default(1col-stickybtn).html">Default (1col) w/ Sticky Button</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-default(1col-accordion).html">Default (1col) w/ Accordion</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-default(2col).html">Default (2col)</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-default(2col-stickybtn).html">Default (2col) w/ Sticky Button</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-form.html">Sign Up Form</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="page-thankyou.html">Thank You</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<header class="jumbotron subhead">
+  		<div class="container">
+   			<h1>Progress Molecule</h1>
+    		<p class="lead"></p>
+  		</div>
+	</header>
+	<div class="container mixture-main-container">
+		<div class="row">
+			
+
+	<div class="span8">
+		<div class="petition-progress">
+	<div class="petition-chart">
+		<div id="petitionProgressChart" class="petition-progchart" data-percent="96">
+			<span class="percent"></span>
+		</div>
+	</div>
+	<div class="petition-count">
+		<h4 class="petition-prognum">18,784</h4>
+		<p class="petition-proglabel">Supporters</p>
+	</div>
+	<div class="petition-goal">
+		<h4 class="petition-prognum">24,000</h4>
+		<p class="petition-proglabel">Goal</p>
+	</div>
+</div>
+	</div>
+	<div class="span4">
+		<!-- Showing pace for SBX Template Sidebar -->
+	</div>
+
+
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	<script src="../public/js/bootstrap.min.js"></script>
+	<script src="../public/js/easypiechart/dist/jquery.easypiechart.min.js"></script>
+	<script src="../public/js/zozo.accordion.4.0/js/zozo.accordion.min.js"></script>
+	<script src="../public/js/readmore/readmore.min.js"></script>	
+	<script src="../public/js/flesler-scrollto/jquery.scrollTo.min.js"></script>	
+	<script src="../public/js/media-match/media.match.min.js"></script>
+	<script src="../public/js/enquire/dist/enquire.min.js"></script>
+ 
+	<script type="text/javascript">
+		// $('#petitionSidebar').affix()
+
+		$(window).ready(function () {
+
+			enquire.register("screen and (max-width: 767px)", {
+			    deferSetup : true,
+			    setup : function() {
+			        // load content via AJAX
+			    },
+			    match : function() {
+			        // show sidebar
+			        $('.petition-pageintro-body').readmore({
+	    				speed: 100,
+	    				maxHeight: 96,
+	    				moreLink: '<a href="#" class="petition-pageintro-toggle petition-pageintro-togglemore"><i class="icon-chevron-down"></i></a>',
+	    				lessLink: '<a href="#" class="petition-pageintro-toggle petition-pageintro-toggleless"><i class="icon-chevron-up"></i></a>',
+	   					embedCSS: false
+	  				});
+			    },
+			    destroy : function() {
+			        // hide sidebar
+			    }  
+			});
+
+
+			// INIT: Petition Donut Chart
+ 			$('#petitionProgressChart').easyPieChart({
+		     	onStep: function(from, to, percent) {
+				 	$(this.el).find('.percent').text(Math.round(percent));
+				},
+				barColor: "#555",
+				trackColor: "#ccc",
+		        lineCap: "butt",
+		        lineWidth: 10,
+		        size: 100
+		    });
+
+			
+			// INIT: Petitition Accordion
+			var demo = $("#accordion-petition").zozoAccordion({
+                theme: "white",
+                active: false,
+                sectionSpacing: 0,
+                shadows: false,
+                responsive: true,
+                expandMode: "multiple",
+                rounded: false,
+                headerSize: 48,
+                showIcons: false,
+                animation: {
+        			type: "css"
+    			}
+            });
+
+
+			// INIT: Petition Form Toggles
+			$("#btn-petition-formToggle").click(function() {
+	  			$("#section-petitionFormToggle").fadeOut( "fast", function() {});
+	  			$("#section-petitionFormToggle").addClass("is-hidden");
+	  			$("#petition-stickybar").addClass("is-hidden");
+	  			$("#section-petitionForm").fadeIn( "fast", function() {});
+			});
+			$("#btn-petition-formToggleSticky").click(function() {
+	  			$("#petition-stickybar").fadeOut( "fast", function() {});
+	  			$("#petition-stickybar").addClass("is-hidden");
+	  			$("#section-petitionFormToggle").addClass("is-hidden");
+	  			$("#section-petitionForm").fadeIn( "fast", function() {});
+	  			// Scroll to Form
+	  			var target = '#section-petitionForm';
+				$.scrollTo( target, 800 );
+			});
+
+
+		});
+
+	</script>
+
+
+</body>
+</html>

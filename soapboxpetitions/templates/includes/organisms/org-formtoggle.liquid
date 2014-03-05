@@ -1,0 +1,13 @@
+{% if formtoggle_type == 'sticky' %}
+{% assign formtoggle_btnId = 'btn-petition-formToggleSticky' %}
+<footer class="stickybar stickybar-fixed-bottom petition-stickybar visible-phone" id="petition-stickybar">
+	<div class="stickybar-inner">
+		{% include "molecules/mol-formtoggle" %}
+	</div>	
+</footer>
+{% else %}
+{% assign formtoggle_btnId = 'btn-petition-formToggle' %}
+<div class="section section-petition-formtoggle {{formtoggle_customcss}}" id="section-petitionFormToggle">
+	{% include "molecules/mol-formtoggle" %}
+</div>
+{% endif %}

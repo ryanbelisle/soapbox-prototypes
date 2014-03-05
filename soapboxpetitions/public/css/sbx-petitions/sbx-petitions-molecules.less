@@ -1,0 +1,288 @@
+//
+// SBX Petitions: Molecules
+// --------------------------------------------------
+
+// Molecule: Petition Page Header
+.petition-title {
+	margin: 0px;
+}
+
+
+
+// Molecule: Petition Intro
+.petition-pageintro-toggle,
+.petition-pageintro-body {
+	display: block;
+	width: 100%;
+}
+
+.petition-pageintro-toggle {
+	text-align: center;
+}
+
+.petition-pageintro-body {
+	overflow: hidden;
+}
+
+// .petition-pageintro-readmore {
+// 	position: relative;
+// }
+
+// Future fade?
+// .petition-pageintro-readmore:after {
+// 	content: '';
+//     position:absolute;
+//     display:block;
+//     top:0;
+//     left:0;
+//     height:100%;
+//     width:100%;
+//     background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+//     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+//     background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+//     background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+//     background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+//     background: linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+// }
+
+
+// Molecule: Petition Progress
+.petition-progress {
+	
+	display: table;
+	width: 100%;
+
+	.petition-chart,
+	.petition-count,
+	.petition-goal {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.petition-chart {
+		width: 20%;
+	}
+
+	.petition-count,
+	.petition-goal {
+		text-align: right;
+		width: 40%;
+	}
+
+}
+
+.petition-prognum {
+	margin: 0px;
+
+	font-size: 56px;
+	line-height: 1.1em;
+	color: #333;
+}
+
+.petition-proglabel {
+	margin: 0px;
+
+	font-size: 24px;
+	line-height: 1.1em;
+	font-weight: 700;
+	color: #999;
+}
+
+.petition-progchart {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	// margin-top: 50px;
+	// margin-bottom: 50px;
+	text-align: center;
+	canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.percent {
+		display: inline-block;
+		line-height: 100px;
+		z-index: 2;
+		font-size: 20px;
+		font-weight: 700;
+		color: #222;
+
+		&:after{
+			content: '%';
+			margin-left: 0.1em;
+			font-size: 1em;
+		}
+	}
+
+}
+
+
+
+// Molecule: Petition Letter
+.petition-letter {
+	font-family: Courier;	
+}
+
+
+
+// Molecule: Petition Supporters
+.petition-supporters-list {
+	margin: 0px;
+}
+
+.supporter-item {
+	margin-top: 24px;
+	padding-top: 24px;
+
+	border-top: 1px solid #eee;
+
+	list-style: none;
+	font-size: 14px;
+	line-height: 24px;
+
+	&:first-child {
+		border-top: none;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+
+}
+
+.supporter-headline {
+	position: relative;
+}
+
+.supporter-name {
+	color: #555;
+	font-weight: 700;
+}
+
+.supporter-location {
+	padding-left: 6px;
+
+	font-size: 12px;
+	color: #999;
+	text-transform: uppercase;
+}
+
+.supporter-time {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	color: #999;
+}
+
+
+
+// Molecule: Petition Form
+.petition-formintro {
+	margin-bottom: 24px;
+}
+
+.petition-formoutro {
+	margin-top: 24px;
+
+	font-size: 14px;
+	line-height: 24px;
+	color: #666;
+}
+
+
+
+
+
+
+
+@media (max-width: 979px) {
+
+
+	// Molecule: Petition Progress
+	.petition-progchart {
+		// width: 100px;
+		// height: 100px;
+
+		// canvas {
+		// 	width: 100px;
+		// 	height: 100px;
+		// }
+
+		// .percent {
+		// 	line-height: 100px;
+		// 	font-size: 20px;
+		// }
+	}
+
+	.petition-prognum {
+		font-size: 36px;
+		line-height: 1.2em;
+	}
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+	.petition-letter {
+		font-size: 14px;
+		line-height: 24px;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.supporter-item:last-child {
+
+		.supporter-text p:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+	
+}
+
+
+@media (max-width: 480px) {
+
+
+	// Molecule: Petition Progress
+	.petition-progchart {
+		// width: 70px;
+		// height: 70px;
+
+		// canvas {
+		// 	width: 70px;
+		// 	height: 70px;
+		// }
+
+		// .percent {
+		// 	line-height: 70px;
+		// 	font-size: 14px;
+		// }
+	}
+
+	.petition-prognum {
+		font-size: 28px;
+		line-height: 1.2em;
+	}
+
+	.petition-proglabel {
+		font-size: 14px;
+		line-height: 1.2em;
+	}
+
+
+	// Molecule: Petition Supporters
+	.supporter-location {
+		display: block;
+		padding-left: 0px;
+	}
+	
+}

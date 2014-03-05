@@ -1,0 +1,96 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Slider2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <link href="../css/zozo.examples.min.css" rel="stylesheet" />
+    
+    <link href="../css/zozo.accordion.min.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/zozo.accordion.min.js"></script>
+</head>
+<body>
+    <div id="ribbon"></div>
+    <div id="page">
+        <div id="example" style="width: 99%; padding: 0;">
+            <a class="z-btn z-back" href="index.html">Back</a>
+            <div id="demo-accordion" data-role="z-accordion"  data-options='{"orientation": "horizontal", "theme": "green", "active": 2, "width": 1600,"height": 440,"sectionSpacing": 8,"headerSize":70,"headerFontSize":2.2, "slider":true,"responsive":true,"showIcons":false,"shadows":true,"bordered":false,"responsiveDelay":0,"animation": {"duration":800, "easing": "easeOutQuart"}, "vertical": {"sectionSpacing":4}}'>
+                <section>
+                    <h3>Photography </h3>
+                    <div>
+                        <img src="http://farm9.staticflickr.com/8144/7184416672_12cb812fa0_z.jpg" />
+                    </div>
+                </section>
+                <section>
+                    <h3>Web Design </h3>
+                    <div>
+                        <img src="http://farm9.staticflickr.com/8022/7526217400_55362fa879_b.jpg" />
+                    </div>
+                </section>
+                <section>
+                    <h3>Illustrations </h3>
+                    <div>
+                        <img src="http://farm8.staticflickr.com/7006/6410081515_058465be99_z.jpg" />
+                    </div>
+                </section>
+                <section>
+                    <h3>Miscancellous </h3>
+                    <div>
+                        <img src="http://farm4.staticflickr.com/3181/2333116714_9ecfa7c4e6_z.jpg?zz=1" />
+                    </div>
+                </section>
+                <section>
+                    <h3>References </h3>
+                    <div>
+                        <img src="http://farm8.staticflickr.com/7098/7040580719_546bc4f161_z.jpg" />
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #page
+        {
+            height: 100%;            
+            margin: 0 auto;
+            padding: 0px;
+            width: 98%;
+        }
+
+        .z-accordion > section > h3{text-transform: uppercase;}          
+    </style>
+
+    <!--
+    comment to test html5 data attributes.
+    <script>
+        $(document).ready(function () {
+            $("#demo-accordion").zozoAccordion({
+                theme: "red",
+                orientation: "horizontal",
+                active: 2,
+                width: 1600,
+                height: 440,
+                sectionSpacing: 15,
+                headerSize: 70,
+                headerFontSize: 2.2,
+                slider: true,                
+                showIcons: false,
+                responsive: true,
+                shadows: true,                
+                bordered: true,
+                responsiveDelay: 0,
+                animation: {
+                    easing: "easeOutQuart",
+                    duration: 800
+                }
+            });
+        });       
+    </script>
+    -->
+</body>
+</html>
+ 

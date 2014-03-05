@@ -1,0 +1,112 @@
+<div class="section section-accordion shop-billing" id="shopBilling">
+	<div class="section-header">
+		<h3 class="title">2. Billing Information (Invoice option)</h3>
+	</div>
+	<div class="section-body">
+		
+		<fieldset class="clearfix">
+			<h4 class="subtitle">Payment Method</h4>
+			<div class="control-group">
+				<div class="controls">
+					{% include "select-payment" %}
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="clearfix">
+			<h4 class="subtitle">Invoice</h4>
+			<p class="desc">Please provide the information to recieve your invoice.</p>	
+			<div class="control-group">
+				<button class="btn" type="button">Copy from Contact Information</button>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Name</label>
+				<div class="row-fluid">
+					<div class="span4">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">First</span>
+						</div>
+					</div>
+					<div class="span8">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">Last</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Email Address</label>
+				<div class="controls">
+					<input type="text" class="input-text input-block-level">
+					<span class="help-block">Your email address (ex. you@domain.com)</span>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="control-group">
+						<label class="control-label">Phone</label>
+						<div class="controls">
+							<input type="text" class="input-text input-medium">
+							<span class="help-block">(xxx) xxx-xxxx</span>
+						</div>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="control-group">
+						<label class="control-label">Organization</label>
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		
+		<fieldset class="clearfix">
+			<h4 class="subtitle">Billing Address</h4>
+			<p class="desc">Please provide the address where your credit card statement is sent.</p>	
+			<div class="control-group complex">
+				<div class="controls">
+					<input type="text" class="input-text input-block-level">
+					<span class="help-block">Street Address</span>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">City</span>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="controls">
+							{% include "select-state" %}
+							<span class="help-block">State</span>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">Zip Code</span>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="controls">
+							{% include "select-country" %}
+							<span class="help-block">Country</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+
+		<div class="message billing-message">
+			<h6>Customizable billing message</h6>
+			<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel elerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam enenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+		</div>
+
+	</div>
+</div>

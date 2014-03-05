@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Basic usage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <link href="../css/zozo.examples.min.css" rel="stylesheet" />
+    
+    <link href="../css/zozo.accordion.min.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/zozo.accordion.min.js"></script>
+</head>
+<body>
+    <div id="ribbon"></div>
+    <div id="page">
+        <div id="example" class="width800">
+            <a class="z-btn z-back" href="index.html">Back</a>
+            <div id="basic-usage">
+                
+                <div class="demo-wrapper">
+                    <h4>AJAX settings via jQuery object</h4>
+                    <div id="demo-accordion">
+                        <section>
+                            <h3>Overview </h3>
+                            <div>
+                                <p><strong>Slick Design</strong> and Limitless Customization</p>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Some of it's key features </h3>
+                            <div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Documentation</h3>
+                            <div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>10+ Preset themes </h3>
+                            <div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3>Error Example</h3>
+                            <div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="demo-wrapper">
+                    <h4>AJAX settings via HTML5 data attributes</h4>
+                    <div id="demo-accordion2" data-role='z-accordion' data-options='{"theme":"red", "sectionSpacing": 4, "headerSize": 38}'>
+                        <section>
+                            <h3 data-content-url="ajax-content/content1.html">Overview </h3>
+                            <div>
+                                <p><strong>Slick Design</strong> and Limitless Customization</p>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 data-content-url="ajax-content/content2.html">Some of it's key features </h3>
+                            <div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 data-content-url="ajax-content/content3.html">Documentation</h3>
+                            <div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 data-content-url="ajax-content/content4.html">10+ Preset themes </h3>
+                            <div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 data-content-url="ajax-content/content5.test">Error Example</h3>
+                            <div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="z-note">NOTE: Some browsers like Chrome and Safari has a restriction on using ajax with local resources. It will throw an error. To solve this, try Use firefox or upload your data to a temporary web server.</h4>
+        </div>
+    </div>
+
+    <style>
+        .demo-wrapper {
+            margin-right: 20px;
+            float: left;
+            width: 375px;
+        }
+        .z-note {
+        padding-top:25px;clear: both;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#demo-accordion").zozoAccordion({
+                theme: "blue", 
+                sectionSpacing: 4,
+                headerSize:38,
+                contentUrls: [
+                        'ajax-content/content1.html',
+                        'ajax-content/content2.html',
+                        'ajax-content/content3.html',
+                        'ajax-content/content4.html',
+                        'ajax-content/content5.test'
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is a reall long in stock product with no description taking up 3 full lines</h4>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">{% include "select-qty" %}</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product with a really long description</h4>
+					<p class="desc">Lorem ipsum dolor sit amet, nonummy ligula volutpat hac integer nonummy. Suspendisse ultricies, congue etiam tellus, erat libero, nulla eleifend, mauris pellentesque. Suspendisse integer praesent vel, integer gravida mauris, fringilla vehicula lacinia 255 chars block.</p>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">{% include "select-qty" %}</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-oos">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Out of stock product</h4>
+					<p class="desc">This item is out of stock, the qty selector will be disabled.</p>
+					<span class="label label-oos">out of stock</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">{% include "select-qty-disabled" %}</td>
+				<td class="item-total">$##.##</td>
+			</tr>			
+			<tr class="itemstatus-na">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Not available product</h4>
+					<p class="desc">This item is not available, the qty selector will be replaced w/ N/A.</p>
+					<span class="label label-na">not available</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">N/A</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-dc">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Discontinued product</h4>
+					<p class="desc">This item is discontinued, the qty selector will be replaced w/ N/A and striketrhoughs will be used.</p>
+					<span class="label label-dc">discontinued</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">N/A</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">In stock w/ label</h4>
+					<p class="desc">In stock item w/ a stock label showing thumbnail hover state</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">{% include "select-qty" %}</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><a href="http://placehold.it/400x300&text=+" rel="prettyPhoto" title="Product description"><img class="thumb" src="http://placehold.it/65x65&text=+" width="65" height="65" alt="Product title" /></a></td>
+				<td class="item-product">
+					<h4 class="title">Product w/ larger image</h4>
+					<p class="desc">This is a product which has a bigger image which we can show in a modal popup or lightbox</p>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">{% include "select-qty" %}</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+{% comment %}<pre class="prettyprint">
+<p>source code here</p>
+<p>source code here</p>
+<p>source code here</p>
+</pre>{% endcomment %}

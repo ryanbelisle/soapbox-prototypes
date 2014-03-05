@@ -1,0 +1,19 @@
+{
+  "customRubyPath": "(null)|(null)",
+  "debug": true,
+  "followLeader": true,
+  "lintScripts": false,
+  "preprocessorLocations": "public",
+  "preprocessorScriptOutput": "public/js",
+  "preprocessorStyleOutput": "public/css",
+  "projectDescription": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+  "projectName": "Soapbox Find A Rep",
+  "publishedId": "2691",
+  "serverHostname": "172.16.42.21",
+  "serverPort": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "pages/layout-default",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false
+}

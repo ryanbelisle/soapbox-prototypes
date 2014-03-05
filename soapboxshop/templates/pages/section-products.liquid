@@ -1,0 +1,38 @@
+{% block title %}Section: Products{% endblock %}
+{% block lead %}{% endblock %}
+{% block content %}
+{% include "doc-head" %}
+<div id="page" class="sbx shop layout-1col">
+
+	<div class="span8 col-main">
+		<div class="page-header">
+			<h1>Product Cart Listing <span>(Default Table Layout)</span></h1>
+			<p class="lead">5 column table w/ 65px thumbnail</p>
+		</div>
+		{% include "section-products" %}
+
+		<div class="page-header">
+			<h1>Product Cart Listing  <span>(Default Table Layout States)</span></h1>
+			<p class="lead">Different ways of how the products listing items can look and the different states they can be in.</p>
+		</div>
+		{% include "section-products-states" %}
+
+		<div class="page-header">
+			<h1>Product Cart Listing <span>(Default Table Layout Alternative)</span></h1>
+			<p class="lead">Version of the table with the thumbnail and description in a single column.</p>
+		</div>
+		{% include "section-products-alttable" %}
+
+		<div class="page-header">
+			<h1>Product Cart Cards <span>(Card List Layouts)</span></h1>
+			<p class="lead">Couple of other layout ideas which get rid of the table based layout and focus on better RWD compatibility and implementation of a sort bar.</p>
+		</div>
+		{% include "section-products-cardlist" %}
+	</div>
+	<div class="span4 col-sidebar">
+
+	</div>
+
+</div>
+{% include "doc-foot" %}
+{% endblock %}

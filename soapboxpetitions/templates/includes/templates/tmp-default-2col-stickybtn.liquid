@@ -1,0 +1,35 @@
+<div id="page" class="sbx petitions petitions-view-petition lay-2col">
+
+	{% comment %}Stickybar Form Toggle{% endcomment %}
+	{% assign formtoggle_type = 'sticky' %}
+	{% assign formtoggle_btn_customcss = 'btn-small w90' %}
+	{% include "organisms/org-formtoggle" %}
+
+	{% include "organisms/org-pageheader" %}
+
+	<div class="row-fluid">
+		<div class="span8 petitions-col-main">	
+						
+			{% include "organisms/org-media" %}
+			{% include "organisms/org-progress" %}
+			{% include "organisms/org-pageintro" %}	
+
+			{% comment %}Inline Form Toggle{% endcomment %}
+			{% assign formtoggle_type = '' %}
+			{% assign formtoggle_btn_customcss = '' %}
+			{% include "organisms/org-formtoggle" %}
+
+			{% include "organisms/org-letter" %}
+			{% include "organisms/org-supporters" %}
+			{% include "organisms/org-socialshare" %}
+			{% include "organisms/org-pageoutro" %}
+		</div>
+		<div class="span4 petitions-col-sidebar">
+			<div class="petitions-sidebar" id="petitionSidebar">
+				{% assign form_customcss = 'form-l-vert-w100 form-cg-mrg-small' %}
+				{% assign section_form_customcss = 'hidden-phone' %}
+				{% include "organisms/org-form" with {{form_sidebar_customcss}} %}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,121 @@
+<form class="petition-form {{form_customcss}}" action="#" id="petitionForm">
+	<div class="petition-formintro">
+		<p>Sign form intro id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+	</div>
+	<fieldset class="petition-fs clearfix">		
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<input type="text" class="input-text input-block-level" placeholder="First name">
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<input type="text" class="input-text input-block-level" placeholder="Last name">
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<input type="email" class="input-text input-block-level" placeholder="Email">
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<input type="text" class="input-text input-block-level" placeholder="City">
+			</div>
+		</div>		
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				{% include "atoms/select-state" %}
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				{% include "atoms/select-country" %}
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<textarea class="textarea input-block-level" rows="5" placeholder="Reason for signing (optional)"></textarea>
+			</div>
+		</div>
+		<div class="control-group cg-checkboxes {{cg_customcss}}">
+			<div class="controls">
+				<label class="checkbox">
+      				<input type="checkbox" checked> Display my signature on this site
+    			</label>
+			</div>
+		</div>
+	</fieldset>
+	<div class="form-actions petition-formactions">
+		<button class="btn btn-primary btn-petition-submit" type="button">Sign it!</button>
+	</div>
+	<div class="petition-formoutro">
+		<p>Sign form outro description cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus.</p>
+	</div>
+</form>
+
+
+{% comment %}
+<form class="petition-form {{form_customcss}}" action="#" id="petitionForm">
+	<div class="petition-formintro">
+		<p>Sign form intro id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+	</div>
+	<fieldset class="petition-fs clearfix">		
+		<div class="row-fluid">
+			<div class="span4">
+				<div class="control-group {{cg_customcss}}">
+					<div class="controls">
+						<input type="text" class="input-text input-block-level" placeholder="First name">
+					</div>
+				</div>
+			</div>
+			<div class="span8">
+				<div class="control-group {{cg_customcss}}">
+					<div class="controls">
+						<input type="text" class="input-text input-block-level" placeholder="Last name">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<input type="text" class="input-text input-block-level" placeholder="City">
+			</div>
+		</div>		
+		<div class="row-fluid">
+			<div class="span6">
+				<div class="control-group {{cg_customcss}}">
+					<div class="controls">
+						{% include "atoms/select-state" %}
+					</div>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="control-group {{cg_customcss}}">
+					<div class="controls">
+						{% include "atoms/select-country" %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="control-group {{cg_customcss}}">
+			<div class="controls">
+				<textarea class="textarea input-block-level" rows="5" placeholder="Reason for signing (optional)"></textarea>
+			</div>
+		</div>
+		<div class="control-group cg-checkboxes {{cg_customcss}}">
+			<div class="controls">
+				<label class="checkbox">
+      				<input type="checkbox" checked> Display my signature on this site
+    			</label>
+			</div>
+		</div>
+	</fieldset>
+	<div class="form-actions petition-formactions">
+		<button class="btn btn-primary btn-petition-submit" type="button">Sign it!</button>
+	</div>
+	<div class="petition-formoutro">
+		<p>Sign form outro description cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus.</p>
+	</div>
+</form>
+{% endcomment %}

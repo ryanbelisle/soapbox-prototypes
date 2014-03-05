@@ -1,0 +1,23 @@
+{% block title %}Section: Shipping Information{% endblock %}
+{% block lead %}{% endblock %}
+
+{% block content %}
+
+{% include "doc-head" %}
+
+<div id="page" class="sbx shop layout-1col">
+
+	<div class="span8 col-main">
+		{% include "section-shipping" %}
+		{% include "section-shipping-digital" %}
+		{% include "section-shipping-both" %}
+	</div>
+	<div class="span4 col-sidebar">
+
+	</div>
+
+</div>
+
+{% include "doc-foot" %}
+
+{% endblock %}

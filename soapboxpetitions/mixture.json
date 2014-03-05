@@ -1,0 +1,29 @@
+{
+  "debug": false,
+  "domain": null,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": "public",
+  "preprocessorScriptOutput": "public/js",
+  "preprocessorStyleOutput": "public/css",
+  "projectDescription": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+  "projectName": "Soapbox Petitions",
+  "publishedId": null,
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "pages/page-default(1col)",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false,
+
+  "ftpSettings": {
+    "host": "ftp.ryan-belisle.com",
+    "port": 21,
+    "username": "ryanbeli",
+    "password": "@436StaffordSt",
+    "path": "public_html/clients/picnet/soapbox/prototypes/soapbox-petitions/converted-html/"
+  }
+}
+

@@ -1,0 +1,27 @@
+{% block title %}Layout: Default (1 Column){% endblock %}
+{% block lead %}{% endblock %}
+{% block content %}
+
+	<div id="page" class="sbx shop layout-1col">
+
+		<div class="span8 col-main">
+			{% include "section-pageheader" %}
+			{% include "section-pageintro" %}
+			{% include "section-products" %}
+			{% include "section-contact" %}
+			{% include "section-billing" %}
+			{% include "section-shipping" %}
+			{% include "section-ordersummary" %}
+			<div class="row-fluid">
+				<div class="span6">{% include "section-help" %}</div>
+				<div class="span6">{% include "section-security" %}</div>
+			</div>
+			{% include "section-pageoutro" %}
+		</div>
+		<div class="span4 col-sidebar">
+
+		</div>
+
+	</div>
+
+{% endblock %}

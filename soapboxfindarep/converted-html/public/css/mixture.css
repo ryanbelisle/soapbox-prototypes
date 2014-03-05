@@ -1,0 +1,59 @@
+/* Mixture Template */
+.navbar .nav .dropdown-toggle .caret {
+	margin-top: 12px;
+}
+.subhead {
+	background: #777;
+	color: #eee;
+	padding: 24px 0;
+	margin-bottom: 30px;
+}
+.subhead h1 {
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: .1em;
+	margin: 0px;
+}
+.subhead p {
+	color: #ddd;
+	font-size: 18px;
+	margin: 0px;
+}
+
+
+.page-header {
+	margin: 5em 0 0 0;
+	border: none;
+}
+
+.page-header:first-child {
+	margin-top: 0;
+}
+
+.page-header h1 {
+	font-size: 36px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #eee;
+}
+
+.page-header h1 span {
+	font-size: 16px;
+	line-height: 1em;
+	color: #999;
+	font-style: italic;
+	/*text-transform: uppercase;*/
+	font-weight: 300;
+	float: right;
+	margin: 22px 0 0 0;
+}
+
+.page-header p {
+	/*font-size: 18px;*/
+	/*color: #666;*/
+	margin: 0px;
+	/*font-style: italic;*/
+}
+
+.sbx-doc .section {
+	margin: 1em 0 3em 0;
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Soapbox Find A Rep {% comment %}Duplicate BLOCK was here{% endcomment %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{{ "bootstrap.css" | asset_url | stylesheet_tag }}
+	<style>
+	body {
+		padding-top: 40px;
+		padding-bottom: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	{{ "bootstrap-responsive.css" | asset_url | stylesheet_tag }}
+	{{ "font-awesome.css" | asset_url | stylesheet_tag }}
+	{{ "google-code-prettify/prettify.css" | asset_url | stylesheet_tag }}
+	{{ "prettyphoto/css/prettyPhoto.css" | asset_url | stylesheet_tag }}
+	{{ "mixture.css" | asset_url | stylesheet_tag }}
+	{{ "sbx-shop.css" | asset_url | stylesheet_tag }}
+	{{ "auth-buttons.css" | asset_url | stylesheet_tag }}
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	{{ "modernizr-latest.js" | asset_url | script_tag }}
+
+	
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "e056e73d-dd37-4a82-996f-37db00c5e37a", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+	
+</head>
+<body>
+
+	{% include "navigation" %}
+	<header class="jumbotron subhead">
+  		<div class="container">
+   			<h1>{% block title %}Page Title{% endblock %}</h1>
+    			<p class="lead">{% block lead %}Page Description{% endblock %}</p>
+  		</div>
+	</header>
+	<div class="container">
+		<div class="row-fluid">
+			{% block content %}{% endblock %}
+		</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	{{ "bootstrap.js" | asset_url | script_tag }}
+	{{ "google-code-prettify/prettify.js" | asset_url | script_tag }}
+	{{ "prettyphoto/js/jquery.prettyPhoto.js" | asset_url | script_tag }}
+	{{ "mosaic/js/mosaic.1.0.1.js" | asset_url | script_tag }}
+
+	<script type="text/javascript" charset="utf-8">
+		
+		// make code pretty
+    		window.prettyPrint && prettyPrint()
+
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+			// $('.bar').mosaic({
+			// 	animation	:	'slide'
+			// });
+		});
+	</script>
+
+</body>
+</html>

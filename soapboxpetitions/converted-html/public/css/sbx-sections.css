@@ -1,0 +1,140 @@
+.section {
+  color: #555;
+  margin: 46px 0 48px 0;
+}
+.section h4.subtitle {
+  font-size: 18px;
+  line-height: 1em;
+  color: #555;
+}
+.section p.desc {
+  color: #666;
+}
+.section .message h6 {
+  font-size: 1em;
+  margin: .4em 0;
+}
+.section .message p:last-child {
+  margin-bottom: 0;
+}
+.section .controls .symbol {
+  line-height: 39px;
+}
+.section-title {
+  margin: 24px 0px;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 28px;
+  line-height: 1.1em;
+}
+.section-pageheader {
+  margin: 0px;
+}
+h1.title {
+  font-size: 34px;
+  line-height: 1.1em;
+  color: #222;
+}
+.section-pageintro {
+  font-size: 18px;
+  line-height: 32px;
+}
+.section-pageoutro {
+  color: #666;
+}
+.section-mod {
+  color: #666;
+  font-size: 13px;
+  line-height: 22px;
+  background: #fdfdfd;
+}
+.section-mod .section-header {
+  background: #fbfbfb;
+  border-bottom: 1px solid #eee;
+}
+.section-mod .section-header h3 {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.0em;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 20px 24px;
+}
+.section-mod .section-body {
+  padding: 20px 24px;
+}
+.section-mod .section-body p:last-child {
+  margin-bottom: 0px;
+}
+.section-accordion {
+  background: #fdfdfd;
+}
+.section-accordion .section-header {
+  padding: 24px;
+  background: #fbfbfb;
+  border-bottom: 1px solid #eee;
+}
+.section-accordion .section-header h3 {
+  font-size: 21px;
+  line-height: 1em;
+  color: #555;
+  margin: 0;
+}
+.section-accordion .section-body {
+  padding-bottom: 24px;
+}
+.section-accordion .section-body fieldset {
+  padding: 24px 24px 0 24px;
+}
+.section-accordion .section-body fieldset:first-child {
+  border-top: none;
+}
+.section-accordion .section-body fieldset h4.subtitle {
+  margin-top: 0;
+}
+.section-socialshare {
+  padding: 24px 0px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.share-title {
+  text-transform: uppercase;
+  margin: 0px;
+}
+.share-list {
+  margin: 0px;
+}
+.share-list li {
+  display: inline-block;
+  margin: 0 6px;
+  list-style: none;
+}
+.share-list a {
+  text-decoration: none;
+}
+.share-list i {
+  font-size: 32px;
+  line-height: 32px;
+}
+.socialshare .share-title {
+  float: left;
+  line-height: 32px;
+}
+.socialshare .share-list {
+  float: right;
+}
+.socialshare .share-list li:last-child {
+  margin-right: 0px;
+}
+.socialshare {
+  *zoom: 1;
+}
+.socialshare:before,
+.socialshare:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.socialshare:after {
+  clear: both;
+}

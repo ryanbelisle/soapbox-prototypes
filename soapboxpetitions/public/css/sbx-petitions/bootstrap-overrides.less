@@ -1,0 +1,187 @@
+//
+// Bootstrap Overrides
+// --------------------------------------------------
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+.help-block {
+	margin-top: 6px;
+	margin-bottom: 0px;
+	font-size: .8em;
+	line-height: 1.4em;
+}
+
+.row-fluid .span-inline {
+	float: left;
+	width: auto;
+}
+
+.control-group {
+	margin-bottom: 16px;
+
+	&.complex {
+		margin-bottom: 6px;
+
+		.controls {
+			margin-bottom: 16px;
+		}
+	}
+
+	.control-label {
+		font-weight: bold;
+	}
+}
+
+
+
+
+
+.form-l-vert-w100 {
+
+	.row-fluid [class*=span] {
+		float: none;
+		width: 100%;
+		margin-left: 0px;		
+	}
+
+	.control-group {
+		margin-bottom: 0px;
+	}
+
+	.controls {
+		margin-bottom: 16px;
+	}
+
+}
+
+.form-cg-mrg-small .controls {
+	margin-bottom: 8px;
+}
+
+.form-cg-mrg-small .cg-checkboxes {
+	margin-bottom: 16px;
+}
+
+
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.table th,
+.table td {
+	border-top: 1px solid #eee;
+}
+
+th.full,
+td.full {
+	width: 100%;
+}
+
+.label,
+.badge {
+	font-size: 12px;
+	padding: 4px 6px;
+	text-shadow: none;
+	// color: #999;
+	// background-color: #ddd;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+
+.btn-primary {
+	font-size: 16px;
+	padding: 12px 30px;
+	text-transform: uppercase;
+	background: #333;
+	text-decoration: none;
+	text-shadow: none;
+
+	&:hover {
+		background: #111;
+	}
+}
+
+.btn-small {
+	padding: 10px 20px;
+	font-size: 14px;
+
+}
+
+.btn-large {
+	font-size: 18px;
+	padding: 16px 40px;
+}
+
+
+
+.form-actions {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+input.input-text {
+	height: 40px;
+	line-height: 24px;
+	padding: 8px 8px 8px 12px;
+	box-sizing: border-box;
+}
+
+select.select {
+	height: 40px;
+	line-height: 24px;
+	padding: 8px 8px 8px 12px;
+	box-sizing: border-box;
+}
+
+input.input-text,
+select.select {
+	margin-bottom: 0;
+}
+
+.input-block-level {
+	min-height: inherit !important;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+
+	.control-group {
+		margin-bottom: 0px;
+
+		.controls {
+			margin-bottom: 16px;
+		}
+	}
+
+}

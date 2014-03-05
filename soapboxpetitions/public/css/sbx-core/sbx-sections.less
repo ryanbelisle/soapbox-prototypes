@@ -1,0 +1,361 @@
+//
+// Sections
+// --------------------------------------------------
+
+// Section
+.section {
+	color: #555;
+	margin: 46px 0 48px 0;
+
+	h4.subtitle {
+		font-size: 18px;
+		line-height: 1em;
+		color: #555;
+	}
+
+	p.desc {
+		color: #666;
+	}
+
+	.message {
+
+		h6 {
+			font-size: 1em;
+			margin: .4em 0;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.controls .symbol {
+		line-height: 39px;
+	}
+}
+
+.section-title {
+	margin: 24px 0px;
+
+	text-transform: uppercase;
+	color: #333;
+	font-size: 28px;
+	line-height: 1.1em;
+}
+
+// Page Header
+.section-pageheader {
+	margin: 0px;
+}
+
+h1.title {
+	font-size: 34px;
+	line-height: 1.1em;
+	color: #222;
+}
+
+
+
+// Section: Page Intro
+.pageintro {
+	font-size: 18px;
+	line-height: 32px;
+}
+
+
+
+// Section: Page Outro
+.pageoutro {
+	color: #666;
+}
+
+
+
+// Section: Module
+.section-mod {
+	color: #666;
+	font-size: 13px;
+	line-height: 22px;
+	background: #fdfdfd;
+
+	.section-header {
+		background: #fbfbfb;
+		border-bottom: 1px solid #eee;
+
+		h3 {
+			color: #555;
+			font-size: 16px;
+			line-height: 1.0em;
+			text-transform: uppercase;
+			margin: 0px;
+			padding: 20px 24px;
+		}
+	}
+
+	.section-body {
+		padding: 20px 24px;
+
+		p:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+
+
+// Section: Accordion
+.section-accordion {
+	background: #fdfdfd;
+
+	.section-header {
+		padding: 24px;
+		background: #fbfbfb;
+		border-bottom: 1px solid #eee;
+
+		h3 {
+			font-size: 21px;
+			line-height: 1em;
+			color: #555;
+			margin: 0;
+		}
+	}
+
+	.section-body {
+		padding-bottom: 24px;
+
+		fieldset {
+			padding: 24px 24px 0 24px;
+
+			&:first-child {
+				border-top: none;
+			}
+
+			h4.subtitle {
+				margin-top: 0;
+			}
+		}		
+	}
+}
+
+
+
+// Section: Social Share
+.section-socialshare {
+	padding: 24px 0px;
+
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.socialshare {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.share-title {
+	margin: 0px;
+
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.share-list {
+	margin: 0px;
+}
+
+.share-item {
+	display: inline-block;
+	margin: 0 6px;
+	list-style: none;
+}
+
+.share-link {
+	text-decoration: none;
+}
+
+.share-icon {
+	font-size: 32px;
+	line-height: 32px
+}
+
+.socialshare {
+	
+	.share-title {
+		float: left;
+	}
+
+	.share-list {
+		float: right;
+
+		li:first-child {
+			margin-left: 0px;
+		}
+		li:last-child {
+			margin-right: 0px;
+		}
+	}
+
+}
+
+.socialshare.lay-default-left {
+
+	vertical-align: middle;
+	text-align: left;
+	
+	.share-title {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;		
+		margin-right: 10px;
+	}
+
+	.share-list {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+.socialshare.lay-default-right {
+
+	vertical-align: middle;
+	text-align: right;
+	
+	.share-title {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;		
+		margin-right: 10px;
+	}
+
+	.share-list {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+.socialshare.lay-default-centered {
+
+	vertical-align: middle;
+	text-align: center;
+
+	.share-title {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;		
+		margin-right: 10px;
+	}
+
+	.share-list {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+.socialshare.lay-ttlright {
+	
+	.share-title {
+		float: right;
+	}
+
+	.share-list {
+		float: left;
+	}
+
+}
+
+.socialshare.lay-ttlright-left {
+
+	vertical-align: middle;
+	text-align: left;
+	
+	.share-title {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;		
+		margin-left: 10px;
+	}
+
+	.share-list {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+.socialshare.lay-ttlright-right {
+
+	vertical-align: middle;
+	text-align: right;
+	
+	.share-title {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+
+	.share-list {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+.socialshare.lay-ttlright-centered {
+
+	vertical-align: middle;
+	text-align: center;
+
+	.share-title {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+
+	.share-list {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+.socialshare.lay-ttltop-centered {
+
+	text-align: center;
+
+	.share-title {
+		float: none;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.share-list {
+		float: none;
+		display: block;
+	}
+
+}
+
+
+
+
+// Section: Thank You
+

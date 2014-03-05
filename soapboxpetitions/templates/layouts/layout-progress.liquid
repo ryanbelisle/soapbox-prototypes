@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Soapbox Petitions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{{ "bootstrap.css" | asset_url | stylesheet_tag }}
+	<style>
+	body {
+		padding-top: 40px;
+		padding-bottom: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	{{ "bootstrap-responsive.css" | asset_url | stylesheet_tag }}
+	{{ "font-awesome.css" | asset_url | stylesheet_tag }}
+	{{ "mixture.css" | asset_url | stylesheet_tag }}
+	{{ "sbx-core.css" | asset_url | stylesheet_tag }}
+	{{ "sbx-petitions.css" | asset_url | stylesheet_tag }}
+	{% comment %}{{ "zozo.accordion.css" | asset_url | stylesheet_tag }}{% endcomment %}
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+	{% comment %}{{ "modernizr-latest.min.js" | asset_url | script_tag }}{% endcomment %}
+
+	{% comment %}BEGIN: For IE, has to be in HEAD to work!{% endcomment %}
+	{% comment %}{{ "selectivizr.js" | asset_url | script_tag }}
+	{{ "/respond/respond.src.js" | asset_url | script_tag }}
+	{{ "/placeholders/placeholders.min.js" | asset_url | script_tag }}{% endcomment %}
+	
+</head>
+<body>
+
+	{% include "docs/navigation" %}
+	<header class="jumbotron subhead">
+  		<div class="container">
+   			<h1>{% block title %}Page Title{% endblock %}</h1>
+    		<p class="lead">{% block lead %}Page Description{% endblock %}</p>
+  		</div>
+	</header>
+	<div class="container mixture-main-container">
+		<div class="row">
+			{% block content %}{% endblock %}
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	{% comment %}{{ "bootstrap.js" | asset_url | script_tag }}{% endcomment %}
+	{{ "/easypiechart/dist/jquery.easypiechart.min.js" | asset_url | script_tag }}
+	{% comment %}{{ "/zozo.accordion.4.0/js/zozo.accordion.min.js" | asset_url | script_tag }}
+	{{ "/readmore/readmore.min.js" | asset_url | script_tag }}	
+	{{ "/media-match/media.match.min.js" | asset_url | script_tag }}
+	{{ "/enquire/dist/enquire.min.js" | asset_url | script_tag }}{% endcomment %}
+ 
+	<script type="text/javascript">
+		// $('#petitionSidebar').affix()
+
+		// $(document).ready(function () {
+
+			// enquire.register("screen and (max-width: 767px)", {
+			//     deferSetup : true,
+			//     setup : function() {
+			//         // load content via AJAX
+			//     },
+			//     match : function() {
+			//         // show sidebar
+			//         $('.petition-pageintro-body').readmore({
+	  //   				speed: 100,
+	  //   				maxHeight: 96,
+	  //   				moreLink: '<a href="#" class="petition-pageintro-toggle petition-pageintro-togglemore"><i class="icon-chevron-down"></i></a>',
+	  //   				lessLink: '<a href="#" class="petition-pageintro-toggle petition-pageintro-toggleless"><i class="icon-chevron-up"></i></a>',
+	  //  					embedCSS: false
+	  // 				});
+			//     },
+			//     destroy : function() {
+			//         // hide sidebar
+			//     }  
+			// });
+
+
+			// INIT: Petition Donut Chart
+ 			$('.petition-progchart').easyPieChart({
+		     	onStep: function(from, to, percent) {
+				 	$(this.el).find('.percent').text(Math.round(percent));
+				},
+				barColor: "#555",
+				trackColor: "#ccc",
+		        lineCap: "butt",
+		        lineWidth: 10,
+		        size: 100
+		    });
+
+
+			
+			// // INIT: Petitition Accordion
+			// var demo = $("#accordion-petition").zozoAccordion({
+   //              theme: "white",
+   //              active: false,
+   //              sectionSpacing: 0,
+   //              shadows: false,
+   //              responsive: true,
+   //              expandMode: "multiple",
+   //              rounded: false,
+   //              headerSize: 48,
+   //              showIcons: false,
+   //              animation: {
+   //      			type: "css"
+   //  			}
+   //          });
+
+
+			// // INIT: Petition Form Toggles
+			// $("#btn-petition-formToggle").click(function() {
+	  // 			$("#section-petitionFormToggle").fadeOut( "fast", function() {});
+	  // 			$("#section-petitionFormToggle").addClass("is-hidden");
+	  // 			$("#petition-stickybar").addClass("is-hidden");
+	  // 			$("#section-petitionForm").fadeIn( "fast", function() {});
+			// });
+			// $("#btn-petition-formToggleSticky").click(function() {
+	  // 			$("#petition-stickybar").fadeOut( "fast", function() {});
+	  // 			$("#petition-stickybar").addClass("is-hidden");
+	  // 			$("#section-petitionFormToggle").addClass("is-hidden");
+	  // 			$("#section-petitionForm").fadeIn( "fast", function() {});
+			// });
+
+
+		// });
+
+	</script>
+
+
+
+
+
+</body>
+</html>

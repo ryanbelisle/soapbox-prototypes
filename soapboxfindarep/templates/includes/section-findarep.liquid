@@ -1,0 +1,97 @@
+<div class="section section-accordion shop-billing" id="shopBilling">
+	<div class="section-header">
+		<h3 class="title">Find Your Rep</h3>
+	</div>
+	<div class="section-body">
+
+		<fieldset class="clearfix">
+			<p class="desc">Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			
+			<div class="control-group">
+				<label class="control-label">Name</label>
+				<div class="row-fluid">
+					<div class="span4">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">First</span>
+						</div>
+					</div>
+					<div class="span8">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">Last</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Email Address</label>
+				<div class="controls">
+					<input type="text" class="input-text input-block-level">
+					<span class="help-block">Your email address (ex. you@domain.com)</span>
+				</div>
+			</div>
+			
+			<div class="control-group complex">
+				<div class="controls">
+					<input type="text" class="input-text input-block-level">
+					<span class="help-block">Street Address</span>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">City</span>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="controls">
+							{% include "select-state" %}
+							<span class="help-block">State</span>
+						</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="controls">
+							<input type="text" class="input-text input-block-level">
+							<span class="help-block">Zip Code</span>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="controls">
+							{% include "select-country" %}
+							<span class="help-block">Country</span>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+			
+			
+			
+			<div class="control-group">
+				<div class="controls">
+					<label class="checkbox">
+      <input type="checkbox">Newsletter Signup Option
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">Updates Option
+    </label>
+				</div>
+			</div>
+
+
+		</fieldset>
+		
+		
+		
+
+	</div>
+</div>
+
+<div class="form-actions order-formactions">
+				<a class="btn btn-large btn-primary btn-block" href="/pages/layout-step2">Find Your Representative</a>
+			</div>
