@@ -35,24 +35,29 @@
 		</div>
 	</div>
 
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	{{ "bootstrap.js" | asset_url | script_tag }}
-	{{ "google-code-prettify/prettify.js" | asset_url | script_tag }}
-	{{ "prettyphoto/js/jquery.prettyPhoto.js" | asset_url | script_tag }}
-	{{ "mosaic/js/mosaic.1.0.1.js" | asset_url | script_tag }}
+	{% comment %}{{ "google-code-prettify/prettify.js" | asset_url | script_tag }}{% endcomment %}
+	{% comment %}{{ "prettyphoto/js/jquery.prettyPhoto.js" | asset_url | script_tag }}{% endcomment %}
+	{% comment %}{{ "mosaic/js/mosaic.1.0.1.js" | asset_url | script_tag }}{% endcomment %}
 
 	<script type="text/javascript" charset="utf-8">
 		
 		// make code pretty
-    		window.prettyPrint && prettyPrint()
+    	// window.prettyPrint && prettyPrint()
 
 		$(document).ready(function(){
-			$("a[rel^='prettyPhoto']").prettyPhoto();
+			// $("a[rel^='prettyPhoto']").prettyPhoto();
 			// $('.bar').mosaic({
 			// 	animation	:	'slide'
 			// });
 		});
 	</script>
+
+
+
+
+	{% block footerjs %}{% endblock %}
 
 </body>
 </html>

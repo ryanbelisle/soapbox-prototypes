@@ -1,0 +1,83 @@
+{% block title %}Section: Products{% endblock %}
+{% block lead %}{% endblock %}
+{% block content %}
+{% include "doc-head" %}
+<div id="page" class="sbx shop layout-1col">
+
+	<div class="span8 col-main">
+		<div class="page-header">
+			<h1>Product Cart Listing w/ Button <span>(Default Table Layout)</span></h1>
+			<p class="lead">5 column table w/ 65px thumbnail</p>
+		</div>
+		{% include "section-products" %}
+
+		<div class="page-header">
+			<h1>Product Cart Listing w/ Dividers <span>(Default Table Layout)</span></h1>
+			<p class="lead">Divider is just a ROW that spans the entire table w/ custom html</p>
+		</div>
+		{% include "section-products-rowheadings" %}
+
+		<div class="page-header">
+			<h1>Product Cart Listing w/ Tabs <span>(Default Table Layout)</span></h1>
+			<p class="lead">Using Bootstrap tabs. Separate TABLE per tab.</p>
+		</div>
+		{% include "section-products-tabs" %}
+
+		<div class="page-header">
+			<h1>Product Cart Listing w/ FAKE Tabs <span>(Default Table Layout)</span></h1>
+			<p class="lead">Bootstrap tabs, but each tab doesn't have a separate table!</p>
+		</div>
+		{% include "section-products-tabs-fake" %}
+	</div>
+	<div class="span4 col-sidebar">
+
+	</div>
+
+</div>
+{% include "doc-foot" %}
+{% endblock %}
+
+{% block footerjs %}
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+	    $('#shopCartTabNav-FAKE').tab();
+	    
+
+	    $('#shopCartTabNav-FAKE a[href="#all-products-fake"]').click(function (e) {
+	        e.preventDefault();
+	        //$(this).tab('show');
+
+	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+	    })
+
+	    $('#shopCartTabNav-FAKE a[href="#featured-products-fake"]').click(function (e) {
+	        e.preventDefault();
+	        //$(this).tab('show');
+	        
+	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+
+	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).addClass( "is-hidden" );
+	        
+	        
+	    })
+
+	    $('#shopCartTabNav-FAKE a[href="#sale-products-fake"]').click(function (e) {
+	        e.preventDefault();
+	        //$(this).tab('show');
+			$( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+
+	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).addClass( "is-hidden" );
+	    })
+    });
+
+</script> 
+{% endblock %}

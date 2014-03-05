@@ -16,5 +16,6 @@
   "templateDefaultPage": "pages/layout-default",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": false
+  "useCompass": false,
+  "followLeader": true
 }

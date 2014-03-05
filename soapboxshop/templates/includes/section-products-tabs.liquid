@@ -1,0 +1,18 @@
+<div class="section section-cart shop-cart" id="shopCart">
+	<ul class="nav nav-tabs cart-tabnav" id="shopCartTabNav">
+  		<li class="active"><a href="#all-products" data-toggle="tab">All Items</a></li>
+  		<li><a href="#featured-products" data-toggle="tab">Featured</a></li>
+  		<li><a href="#sale-products" data-toggle="tab">On Sale</a></li>
+	</ul>
+	<div class="tab-content cart-tabcontent" id="shopCartTabContent">
+  		<div class="tab-pane active" id="all-products">
+			{% include "section-products" %}
+  		</div>
+  		<div class="tab-pane" id="featured-products">
+  			{% include "section-products-states" %}
+  		</div>
+  		<div class="tab-pane" id="sale-products">
+  			{% include "section-products-rowheadings" %}
+  		</div>
+	</div>
+</div>
