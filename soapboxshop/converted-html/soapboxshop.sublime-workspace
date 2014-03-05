@@ -1,0 +1,381 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"webkit-border-",
+				"-webkit-border-radius:   (property)"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"wot",
+				"word-spacing:   (property)"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"opt",
+				"option	Tag"
+			],
+			[
+				"th",
+				"th	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-progress.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-goal.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-supporters.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-chart.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-count.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-thankyou.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-core/sbx-sections.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/layout-thankyou.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-petitions/sbx-petitions.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-socialshare.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-petitions/bootstrap-overrides.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-petitions.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/bootstrap.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/less/variables.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/less/navbar.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/less/mixins.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/layouts/layout.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/mixture.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/responsive.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/navigation.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/section-pageheader.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/doc-head.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/layout-2col.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-petitions/sbx-petitions-sections.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-media.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-form.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/layout-default.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/layout-default(form).liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-hdimg.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-shipping.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-billing.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-form.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-billing-cashcheck.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/models/model.json",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-letter.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-ordersummary-sidebar.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-shipping-digital.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-letter.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-supporters.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-progress.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-pageheader.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-media.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-formtoggle.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-pageintro.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-socialshare.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-shipping.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/section-products.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/layout-default(form)",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-pageoutro.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/mixture.json",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/doc-foot.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-title.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-outro.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-intro.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-formtoggle.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-billing.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-products.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/section-sharing.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-sharing.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-supporter.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-products-states.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-signbutton.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/select-payment.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-signbutton",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-products-cardlist.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/js/chartjs/Chart.js",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/js/selectivizr.min.js",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/layouts/layout.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/layouts/gptw.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-products-alttable.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-security.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-petitions/sections.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-shop/sbx-petitions.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-shop/sections.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-shop/bootstrap-overrides.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/sbx-core/sections.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/section-hdimg.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/page-title.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/petition-hdimage.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/image.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/molecules/page-title",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/includes/billing/paypal.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/index.liquid",
+		"/Users/ReeBooT/Library/Application Support/Sublime Text 2/Packages/Liquid/Settings/HTML (Liquid).sublime-settings",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/templates/pages/section-help.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/accordion.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/theme.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/public/css/site.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxpetitions/favicon.ico",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/sbx-shop/sections.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/sbx-shop/bootstrap-overrides.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/sbx-shop/sbx-shop.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-ordersummary.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/images/payment/payment-cards.png",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/doc-head.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-products.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/layout-thankyou.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/layout-2col.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/layout-default.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-billing.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-contact.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-help.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-ordersummary.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-pageheader.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-pageintro.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-pageoutro.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-security.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/pages/section-shipping.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/index.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/mixture.css",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/sections/section-products.tpl",
+		"/Users/ReeBooT/Downloads/google-code-prettify/examples/quine.html",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/sbx-shop.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-products-altlayouts.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-products.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/less/mixins.less",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-products-states.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/mixture.min.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/public/css/font-awesome.min.css",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/doc-foot.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/includes/section-products-alttable.liquid",
+		"/Applications/MAMP/htdocs/mixture.io/soapboxshop/templates/layouts/gptw.liquid",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/sections/billing/area-creditcard.tpl",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/layout-default.tpl",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/sections/section-billing.tpl",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/sections/section-shipping.tpl",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/sections/billing/area-paypal.tpl",
+		"/Applications/MAMP/htdocs/localsoapbox.com/templates/system/html/com_store/store/sections/billing/area-invoice.tpl"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"span3",
+			"product",
+			".liquid",
+			"includes/",
+			"./About",
+			".About_Us",
+			"radius"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".tpl",
+			"sections/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true
+}

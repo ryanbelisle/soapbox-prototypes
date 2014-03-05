@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Soapbox Shop </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<style>
+	body {
+		padding-top: 40px;
+		padding-bottom: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	<link href="../public/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/js/google-code-prettify/prettify.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/js/prettyphoto/css/prettyPhoto.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/mixture.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/sbx-shop.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<script src="../public/js/modernizr-latest.min.js"></script>
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Soapbox Shop</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li class="dropdown ">
+						<a id="drop1" href="layout-default.html" role="button" class="dropdown-toggle" data-toggle="dropdown">Layouts <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="layout-default.html">Default</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="layout-2col.html">2 Column</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="layout-thankyou.html">Thank You</a></li>
+						</ul>
+					</li>
+					<li class="dropdown ">
+						<a id="drop2" href="/model" role="button" class="dropdown-toggle" data-toggle="dropdown">Sections <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageheader.html">Header</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageintro.html">Intro</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-products.html">Products</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-contact.html">Contact Info</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-billing.html">Billing Info</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-shipping.html">Shipping Info</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-ordersummary.html">Order Summary</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-help.html">Help</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-security.html">Security</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageoutro.html">Outro</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<header class="jumbotron subhead">
+  		<div class="container">
+   			<h1>Section: Products</h1>
+    			<p class="lead"></p>
+  		</div>
+	</header>
+	<div class="container">
+		<div class="row-fluid">
+			
+<div class="sbx-doc">
+<div id="page" class="sbx shop layout-1col">
+
+	<div class="span8 col-main">
+		<div class="page-header">
+			<h1>Product Cart Listing <span>(Default Table Layout)</span></h1>
+			<p class="lead">5 column table w/ 65px thumbnail</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+
+		<div class="page-header">
+			<h1>Product Cart Listing  <span>(Default Table Layout States)</span></h1>
+			<p class="lead">Different ways of how the products listing items can look and the different states they can be in.</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is a reall long in stock product with no description taking up 3 full lines</h4>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product with a really long description</h4>
+					<p class="desc">Lorem ipsum dolor sit amet, nonummy ligula volutpat hac integer nonummy. Suspendisse ultricies, congue etiam tellus, erat libero, nulla eleifend, mauris pellentesque. Suspendisse integer praesent vel, integer gravida mauris, fringilla vehicula lacinia 255 chars block.</p>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-oos">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Out of stock product</h4>
+					<p class="desc">This item is out of stock, the qty selector will be disabled.</p>
+					<span class="label label-oos">out of stock</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini" disabled>
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>			
+			<tr class="itemstatus-na">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Not available product</h4>
+					<p class="desc">This item is not available, the qty selector will be replaced w/ N/A.</p>
+					<span class="label label-na">not available</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">N/A</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-dc">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Discontinued product</h4>
+					<p class="desc">This item is discontinued, the qty selector will be replaced w/ N/A and striketrhoughs will be used.</p>
+					<span class="label label-dc">discontinued</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">N/A</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">In stock w/ label</h4>
+					<p class="desc">In stock item w/ a stock label showing thumbnail hover state</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><a href="http://placehold.it/400x300&text=+" rel="prettyPhoto" title="Product description"><img class="thumb" src="http://placehold.it/65x65&text=+" width="65" height="65" alt="Product title" /></a></td>
+				<td class="item-product">
+					<h4 class="title">Product w/ larger image</h4>
+					<p class="desc">This is a product which has a bigger image which we can show in a modal popup or lightbox</p>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+		<div class="page-header">
+			<h1>Product Cart Listing <span>(Default Table Layout Alternative)</span></h1>
+			<p class="lead">Version of the table with the thumbnail and description in a single column.</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-product">
+					<img class="thumb pull-left" src="http://placehold.it/65x65&text=+" />
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-product">
+					<h4 class="title">This is a Product with no Image</h4>
+					<p class="desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</p>
+					<span class="label label-in">in stock</span>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		<div class="page-header">
+			<h1>Product Cart Cards <span>(Card List Layouts)</span></h1>
+			<p class="lead">Couple of other layout ideas which get rid of the table based layout and focus on better RWD compatibility and implementation of a sort bar.</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+
+	<ul class="shop-cards cart-cards cart-cardlist unstyled">
+		<li class="itemstatus-in clearfix">
+			<div class="span3 col-thumb">
+				<div class="item-thumb">
+					<img class="thumb" src="http://placehold.it/200x200&text=+" />
+				</div>
+			</div>
+			<div class="span7 col-product">
+				<div class="item-product">
+					<h4 class="title">This is the Product  with a really long description and bigger thumbnail</h4>
+					<p class="desc">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<span class="label label-in">in stock</span>
+				</div>
+			</div>
+			<div class="span2 col-pricing">
+				<div class="item-pricing">
+					<span class="item-price">$8.95</span>
+					<span class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></span>
+					<span class="item-total">$0.00</span>
+				</div>
+			</div>
+		</li>
+		<li class="itemstatus-in clearfix">
+			<div class="span3 col-thumb">
+				<div class="item-thumb">
+					<img class="thumb" src="http://placehold.it/200x200&text=+" />
+				</div>
+			</div>
+			<div class="span9 col-product">
+				<div class="item-product">
+					<h4 class="title">This is the Product  with a really long description and bigger thumbnail w/ only 2 column layout</h4>
+					<div class="item-pricing">
+						<span class="item-price">$8.95</span>
+						<span class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></span>
+						<span class="item-total">$0.00</span>
+					</div>
+					<p class="desc">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<span class="label label-in">in stock</span>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+	</div>
+	<div class="span4 col-sidebar">
+
+	</div>
+
+</div>
+</div>
+
+		</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="../public/js/bootstrap.min.js"></script>
+	<script src="../public/js/google-code-prettify/prettify.min.js"></script>
+	<script src="../public/js/prettyphoto/js/jquery.prettyPhoto.min.js"></script>
+	<script src="../public/js/mosaic/js/mosaic.1.0.1.min.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		
+		// make code pretty
+    		window.prettyPrint && prettyPrint()
+
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+			// $('.bar').mosaic({
+			// 	animation	:	'slide'
+			// });
+		});
+	</script>
+
+</body>
+</html>

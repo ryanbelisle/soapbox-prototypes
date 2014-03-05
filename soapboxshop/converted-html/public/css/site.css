@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less ParseError: Unrecognised input in \\Applications\\MAMP\\htdocs\\mixture.io\\soapboxshop\\public\\css\\font-awesome\\docs\\assets\\less\\twbs-222\\mixins.less on line 561, column 7: \A 560     .spanX (@index) when (@index > 0) { \A 561       (~\".span@{index}\") { .span(@index); } \A 562       .spanX(@index - 1); \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

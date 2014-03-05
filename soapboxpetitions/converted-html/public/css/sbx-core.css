@@ -127,9 +127,22 @@ h1.title {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
+.socialshare {
+  *zoom: 1;
+}
+.socialshare:before,
+.socialshare:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.socialshare:after {
+  clear: both;
+}
 .share-title {
-  text-transform: uppercase;
   margin: 0px;
+  line-height: 32px;
+  text-transform: uppercase;
 }
 .share-list {
   margin: 0px;
@@ -148,25 +161,123 @@ h1.title {
 }
 .socialshare .share-title {
   float: left;
-  line-height: 32px;
 }
 .socialshare .share-list {
   float: right;
 }
+.socialshare .share-list li:first-child {
+  margin-left: 0px;
+}
 .socialshare .share-list li:last-child {
   margin-right: 0px;
 }
-.socialshare {
-  *zoom: 1;
+.socialshare.lay-default-left {
+  vertical-align: middle;
+  text-align: left;
 }
-.socialshare:before,
-.socialshare:after {
-  display: table;
-  content: "";
-  line-height: 0;
+.socialshare.lay-default-left .share-title {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
 }
-.socialshare:after {
-  clear: both;
+.socialshare.lay-default-left .share-list {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.socialshare.lay-default-right {
+  vertical-align: middle;
+  text-align: right;
+}
+.socialshare.lay-default-right .share-title {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.socialshare.lay-default-right .share-list {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.socialshare.lay-default-centered {
+  vertical-align: middle;
+  text-align: center;
+}
+.socialshare.lay-default-centered .share-title {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.socialshare.lay-default-centered .share-list {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.socialshare.lay-ttlright .share-title {
+  float: right;
+}
+.socialshare.lay-ttlright .share-list {
+  float: left;
+}
+.socialshare.lay-ttlright-left {
+  vertical-align: middle;
+  text-align: left;
+}
+.socialshare.lay-ttlright-left .share-title {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.socialshare.lay-ttlright-left .share-list {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.socialshare.lay-ttlright-right {
+  vertical-align: middle;
+  text-align: right;
+}
+.socialshare.lay-ttlright-right .share-title {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.socialshare.lay-ttlright-right .share-list {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.socialshare.lay-ttlright-centered {
+  vertical-align: middle;
+  text-align: center;
+}
+.socialshare.lay-ttlright-centered .share-title {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.socialshare.lay-ttlright-centered .share-list {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.socialshare.lay-ttltop-centered {
+  text-align: center;
+}
+.socialshare.lay-ttltop-centered .share-title {
+  float: none;
+  display: block;
+  margin-bottom: 8px;
+}
+.socialshare.lay-ttltop-centered .share-list {
+  float: none;
+  display: block;
 }
 .stickybar {
   position: fixed;
