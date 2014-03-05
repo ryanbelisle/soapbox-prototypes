@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>Soapbox Shop </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<style>
+	body {
+		padding-top: 40px;
+		padding-bottom: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+	</style>
+	<link href="../public/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/js/google-code-prettify/prettify.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/js/prettyphoto/css/prettyPhoto.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/mixture.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../public/css/sbx-shop.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<script src="../public/js/modernizr-latest.min.js"></script>
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Soapbox Shop</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li class="dropdown ">
+						<a id="drop1" href="layout-default.html" role="button" class="dropdown-toggle" data-toggle="dropdown">Layouts <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="layout-default.html">Default</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="layout-2col.html">2 Column</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="layout-thankyou.html">Thank You</a></li>
+						</ul>
+					</li>
+					<li class="dropdown ">
+						<a id="drop2" href="/model" role="button" class="dropdown-toggle" data-toggle="dropdown">Sections <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageheader.html">Header</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageintro.html">Intro</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-products.html">Products</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-contact.html">Contact Info</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-billing.html">Billing Info</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-shipping.html">Shipping Info</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-ordersummary.html">Order Summary</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-help.html">Help</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-security.html">Security</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageoutro.html">Outro</a></li>
+						</ul>
+					</li>
+					<li class="dropdown ">
+						<a id="drop1" href="gptw.html" role="button" class="dropdown-toggle" data-toggle="dropdown">GPTW <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="gptw-products.html">Products</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<header class="jumbotron subhead">
+  		<div class="container">
+   			<h1>Section: Products</h1>
+    			<p class="lead"></p>
+  		</div>
+	</header>
+	<div class="container">
+		<div class="row-fluid">
+			
+<div class="sbx-doc">
+<div id="page" class="sbx shop layout-1col">
+
+	<div class="span8 col-main">
+		<div class="page-header">
+			<h1>Product Cart Listing w/ Button <span>(Default Table Layout)</span></h1>
+			<p class="lead">5 column table w/ 65px thumbnail</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+
+		<div class="page-header">
+			<h1>Product Cart Listing w/ Dividers <span>(Default Table Layout)</span></h1>
+			<p class="lead">Divider is just a ROW that spans the entire table w/ custom html</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr>
+				<td class="cart-divider" colspan="5">
+					<div class="cart-divider-body">
+						<h3>Custom HTML Heading</h3>
+						<p>Id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+					</div>
+				</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+
+		<div class="page-header">
+			<h1>Product Cart Listing w/ Tabs <span>(Default Table Layout)</span></h1>
+			<p class="lead">Using Bootstrap tabs. Separate TABLE per tab.</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<ul class="nav nav-tabs cart-tabnav" id="shopCartTabNav">
+  		<li class="active"><a href="#all-products" data-toggle="tab">All Items</a></li>
+  		<li><a href="#featured-products" data-toggle="tab">Featured</a></li>
+  		<li><a href="#sale-products" data-toggle="tab">On Sale</a></li>
+	</ul>
+	<div class="tab-content cart-tabcontent" id="shopCartTabContent">
+  		<div class="tab-pane active" id="all-products">
+			<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+  		</div>
+  		<div class="tab-pane" id="featured-products">
+  			<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is a reall long in stock product with no description taking up 3 full lines</h4>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product with a really long description</h4>
+					<p class="desc">Lorem ipsum dolor sit amet, nonummy ligula volutpat hac integer nonummy. Suspendisse ultricies, congue etiam tellus, erat libero, nulla eleifend, mauris pellentesque. Suspendisse integer praesent vel, integer gravida mauris, fringilla vehicula lacinia 255 chars block.</p>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-oos">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Out of stock product</h4>
+					<p class="desc">This item is out of stock, the qty selector will be disabled.</p>
+					<div class="item-other">
+						<span class="label label-oos">out of stock</span>
+					</div>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini" disabled>
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>			
+			<tr class="itemstatus-na">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Not available product</h4>
+					<p class="desc">This item is not available, the qty selector will be replaced w/ N/A.</p>
+					<div class="item-other">
+						<span class="label label-na">not available</span>
+					</div>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">N/A</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-dc">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Discontinued product</h4>
+					<p class="desc">This item is discontinued, the qty selector will be replaced w/ N/A and striketrhoughs will be used.</p>
+					<div class="item-other">
+						<span class="label label-dc">discontinued</span>
+					</div>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty">N/A</td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">In stock w/ label</h4>
+					<p class="desc">In stock item w/ a stock label showing thumbnail hover state</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><a href="http://placehold.it/400x300&text=+" rel="prettyPhoto" title="Product description"><img class="thumb" src="http://placehold.it/65x65&text=+" width="65" height="65" alt="Product title" /></a></td>
+				<td class="item-product">
+					<h4 class="title">Product w/ larger image</h4>
+					<p class="desc">This is a product which has a bigger image which we can show in a modal popup or lightbox</p>
+				</td>
+				<td class="item-price">$##.##</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$##.##</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+  		</div>
+  		<div class="tab-pane" id="sale-products">
+  			<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr>
+				<td class="cart-divider" colspan="5">
+					<div class="cart-divider-body">
+						<h3>Custom HTML Heading</h3>
+						<p>Id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+					</div>
+				</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+  		</div>
+	</div>
+</div>
+
+
+		<div class="page-header">
+			<h1>Product Cart Listing w/ FAKE Tabs <span>(Default Table Layout)</span></h1>
+			<p class="lead">Bootstrap tabs, but each tab doesn't have a separate table!</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<ul class="nav nav-tabs cart-tabnav" id="shopCartTabNav-FAKE">
+  		<li class="active"><a href="#all-products-fake" data-toggle="tab">All Items</a></li>
+  		<li><a href="#featured-products-fake" data-toggle="tab">Featured</a></li>
+  		<li><a href="#sale-products-fake" data-toggle="tab">On Sale</a></li>
+	</ul>
+	<div class="tab-content cart-tabcontent" id="shopCartTabContent-FAKE">
+  		<div class="tab-pane active" id="all-products-fake">
+			   <div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in tab-featured">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Featured Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-featured">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Featured Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-default">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-onsale">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">On Sale Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-onsale">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">On Sale Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-default">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-featured">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Featured Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-default">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-default">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-featured">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Featured Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-onsale">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">On Sale Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-featured">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">Featured Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-onsale">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">On Sale Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-onsale">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">On Sale Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in tab-onsale">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">On Sale Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+  		</div>
+	</div>
+</div>
+
+	</div>
+	<div class="span4 col-sidebar">
+
+	</div>
+
+</div>
+</div>
+
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../public/js/bootstrap.min.js"></script>
+	
+	
+	
+
+	<script type="text/javascript" charset="utf-8">
+		
+		// make code pretty
+    	// window.prettyPrint && prettyPrint()
+
+		$(document).ready(function(){
+			// $("a[rel^='prettyPhoto']").prettyPhoto();
+			// $('.bar').mosaic({
+			// 	animation	:	'slide'
+			// });
+		});
+	</script>
+
+
+
+
+	
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+	    $('#shopCartTabNav-FAKE').tab();
+	    
+
+	    $('#shopCartTabNav-FAKE a[href="#all-products-fake"]').click(function (e) {
+	        e.preventDefault();
+	        //$(this).tab('show');
+
+	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+	    })
+
+	    $('#shopCartTabNav-FAKE a[href="#featured-products-fake"]').click(function (e) {
+	        e.preventDefault();
+	        //$(this).tab('show');
+	        
+	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+
+	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).addClass( "is-hidden" );
+	        
+	        
+	    })
+
+	    $('#shopCartTabNav-FAKE a[href="#sale-products-fake"]').click(function (e) {
+	        e.preventDefault();
+	        //$(this).tab('show');
+			$( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+
+	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
+	        $( ".tab-pane .tab-featured" ).addClass( "is-hidden" );
+	    })
+    });
+
+</script> 
+
+
+</body>
+</html>

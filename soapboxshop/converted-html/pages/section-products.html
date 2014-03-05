@@ -56,6 +56,12 @@
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="section-pageoutro.html">Outro</a></li>
 						</ul>
 					</li>
+					<li class="dropdown ">
+						<a id="drop1" href="gptw.html" role="button" class="dropdown-toggle" data-toggle="dropdown">GPTW <b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="gptw-products.html">Products</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -95,7 +101,9 @@
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
 				</td>
 				<td class="item-price">$8.95</td>
 				<td class="item-qty"><select class="select input-mini">
@@ -112,7 +120,10 @@
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
 				</td>
 				<td class="item-price">$21.00</td>
 				<td class="item-qty"><select class="select input-mini">
@@ -129,7 +140,100 @@
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$19.99</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cart-total clearfix">
+		<span class="title">Total:</span>
+		<span class="amount">$0.00</span>
+	</div>
+</div>
+
+		<div class="page-header">
+			<h1>Product Cart Listing <span>(Default Table Layout w/ Row Header)</span></h1>
+			<p class="lead">5 column table w/ 65px thumbnail</p>
+		</div>
+		<div class="section section-cart shop-cart" id="shopCart">
+	<table class="table shop-table cart-table">
+		<thead>
+			<tr>
+				<th class="item-thumbproduct" colspan="2"><a href="#">Products</a> <i class="icon-sort"></i></th>
+				<th class="item-price nowrap"><a href="#">Price</a> <i class="icon-sort"></i></th>
+				<th class="item-qty nowrap">Qty</th>
+				<th class="item-total nowrap">Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$8.95</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr>
+				<td class="cart-divider" colspan="5">
+					<div class="cart-divider-body">
+						<h3>Custom HTML Heading</h3>
+						<p>Id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+					</div>
+				</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
+				</td>
+				<td class="item-price">$21.00</td>
+				<td class="item-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></td>
+				<td class="item-total">$0.00</td>
+			</tr>
+			<tr class="itemstatus-in">
+				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
+				<td class="item-product">
+					<h4 class="title">This is the Product Title</h4>
+					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
 				</td>
 				<td class="item-price">$19.99</td>
 				<td class="item-qty"><select class="select input-mini">
@@ -200,7 +304,9 @@
 				<td class="item-product">
 					<h4 class="title">Out of stock product</h4>
 					<p class="desc">This item is out of stock, the qty selector will be disabled.</p>
-					<span class="label label-oos">out of stock</span>
+					<div class="item-other">
+						<span class="label label-oos">out of stock</span>
+					</div>
 				</td>
 				<td class="item-price">$##.##</td>
 				<td class="item-qty"><select class="select input-mini" disabled>
@@ -217,7 +323,9 @@
 				<td class="item-product">
 					<h4 class="title">Not available product</h4>
 					<p class="desc">This item is not available, the qty selector will be replaced w/ N/A.</p>
-					<span class="label label-na">not available</span>
+					<div class="item-other">
+						<span class="label label-na">not available</span>
+					</div>
 				</td>
 				<td class="item-price">$##.##</td>
 				<td class="item-qty">N/A</td>
@@ -228,7 +336,9 @@
 				<td class="item-product">
 					<h4 class="title">Discontinued product</h4>
 					<p class="desc">This item is discontinued, the qty selector will be replaced w/ N/A and striketrhoughs will be used.</p>
-					<span class="label label-dc">discontinued</span>
+					<div class="item-other">
+						<span class="label label-dc">discontinued</span>
+					</div>
 				</td>
 				<td class="item-price">$##.##</td>
 				<td class="item-qty">N/A</td>
@@ -239,7 +349,10 @@
 				<td class="item-product">
 					<h4 class="title">In stock w/ label</h4>
 					<p class="desc">In stock item w/ a stock label showing thumbnail hover state</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
 				</td>
 				<td class="item-price">$##.##</td>
 				<td class="item-qty"><select class="select input-mini">
@@ -295,7 +408,10 @@
 					<img class="thumb pull-left" src="http://placehold.it/65x65&text=+" />
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
 				</td>
 				<td class="item-price">$##.##</td>
 				<td class="item-qty"><select class="select input-mini">
@@ -311,7 +427,9 @@
 				<td class="item-product">
 					<h4 class="title">This is a Product with no Image</h4>
 					<p class="desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
 				</td>
 				<td class="item-price">$##.##</td>
 				<td class="item-qty"><select class="select input-mini">
@@ -344,7 +462,10 @@
 				<div class="item-product">
 					<h4 class="title">This is the Product  with a really long description and bigger thumbnail</h4>
 					<p class="desc">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<a class="btn btn-primary btn-view">View Details</a>
+						<span class="label label-in">in stock</span>
+					</div>
 				</div>
 			</div>
 			<div class="span2 col-pricing">
@@ -382,7 +503,9 @@
 						<span class="item-total">$0.00</span>
 					</div>
 					<p class="desc">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-					<span class="label label-in">in stock</span>
+					<div class="item-other">
+						<span class="label label-in">in stock</span>
+					</div>
 				</div>
 			</div>
 		</li>
@@ -399,24 +522,29 @@
 		</div>
 	</div>
 
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="../public/js/bootstrap.min.js"></script>
-	<script src="../public/js/google-code-prettify/prettify.min.js"></script>
-	<script src="../public/js/prettyphoto/js/jquery.prettyPhoto.min.js"></script>
-	<script src="../public/js/mosaic/js/mosaic.1.0.1.min.js"></script>
+	
+	
+	
 
 	<script type="text/javascript" charset="utf-8">
 		
 		// make code pretty
-    		window.prettyPrint && prettyPrint()
+    	// window.prettyPrint && prettyPrint()
 
 		$(document).ready(function(){
-			$("a[rel^='prettyPhoto']").prettyPhoto();
+			// $("a[rel^='prettyPhoto']").prettyPhoto();
 			// $('.bar').mosaic({
 			// 	animation	:	'slide'
 			// });
 		});
 	</script>
+
+
+
+
+	
 
 </body>
 </html>
