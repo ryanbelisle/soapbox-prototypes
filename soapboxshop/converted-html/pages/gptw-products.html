@@ -60,6 +60,7 @@
 						<a id="drop1" href="gptw.html" role="button" class="dropdown-toggle" data-toggle="dropdown">GPTW <b class="caret"></b></a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
 							<li role="presentation"><a role="menuitem" tabindex="-1" href="gptw-products.html">Products</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="gptw-product-modal.html">Product Detail</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -83,7 +84,7 @@
 	<div class="span8 col-main">
 		<div class="page-header">
 			<h1>Product Cart Listing w/ Button <span>(Default Table Layout)</span></h1>
-			<p class="lead">5 column table w/ 65px thumbnail</p>
+			<p class="lead">Addition of the 'view details' button which will open up a modal.</p>
 		</div>
 		<div class="section section-cart shop-cart" id="shopCart">
 	<table class="table shop-table cart-table">
@@ -121,7 +122,7 @@
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
 					<div class="item-other">
-						<a class="btn btn-primary btn-view">View Details</a>
+						<a class="btn btn-primary btn-view" href="#">View Details</a>
 						<span class="label label-in">in stock</span>
 					</div>
 				</td>
@@ -141,7 +142,7 @@
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
 					<div class="item-other">
-						<a class="btn btn-primary btn-view">View Details</a>
+						<a class="btn btn-primary btn-view" href="#">View Details</a>
 						<span class="label label-in">in stock</span>
 					</div>
 				</td>
@@ -165,7 +166,7 @@
 
 		<div class="page-header">
 			<h1>Product Cart Listing w/ Dividers <span>(Default Table Layout)</span></h1>
-			<p class="lead">Divider is just a ROW that spans the entire table w/ custom html</p>
+			<p class="lead">Divider is just a ROW that spans the entire table w/ custom html.</p>
 		</div>
 		<div class="section section-cart shop-cart" id="shopCart">
 	<table class="table shop-table cart-table">
@@ -255,7 +256,7 @@
 
 		<div class="page-header">
 			<h1>Product Cart Listing w/ Tabs <span>(Default Table Layout)</span></h1>
-			<p class="lead">Using Bootstrap tabs. Separate TABLE per tab.</p>
+			<p class="lead">Splits the products into idividual tabs. In this scenario there is a table of products per tab. So if a product is assigned to the ALL tab, as well as the FEATURED tab, it would be rendered twice.</p>
 		</div>
 		<div class="section section-cart shop-cart" id="shopCart">
 	<ul class="nav nav-tabs cart-tabnav" id="shopCartTabNav">
@@ -301,7 +302,7 @@
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
 					<div class="item-other">
-						<a class="btn btn-primary btn-view">View Details</a>
+						<a class="btn btn-primary btn-view" href="#">View Details</a>
 						<span class="label label-in">in stock</span>
 					</div>
 				</td>
@@ -321,7 +322,7 @@
 					<h4 class="title">This is the Product Title</h4>
 					<p class="desc">Etiam porta sem malesuada magna mollis euismod nullam quis risus.</p>
 					<div class="item-other">
-						<a class="btn btn-primary btn-view">View Details</a>
+						<a class="btn btn-primary btn-view" href="#">View Details</a>
 						<span class="label label-in">in stock</span>
 					</div>
 				</td>
@@ -568,7 +569,7 @@
 
 		<div class="page-header">
 			<h1>Product Cart Listing w/ FAKE Tabs <span>(Default Table Layout)</span></h1>
-			<p class="lead">Bootstrap tabs, but each tab doesn't have a separate table!</p>
+			<p class="lead">In this scenario the products are listed in 1 table, and the tabs just hide, via jQuery/CSS the items that aren't assigned to the tab. This way there is only 1 instance of each product, no matter what tab you click. This is the method me, Tim and Rene discussed using to cut down on JS complexity.</p>
 		</div>
 		<div class="section section-cart shop-cart" id="shopCart">
 	<ul class="nav nav-tabs cart-tabnav" id="shopCartTabNav-FAKE">
@@ -589,7 +590,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class="itemstatus-in tab-featured">
+			<tr class="itemstatus-in cart-item-featured">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">Featured Product Title</h4>
@@ -608,7 +609,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-featured">
+			<tr class="itemstatus-in cart-item-featured">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">Featured Product Title</h4>
@@ -628,7 +629,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-default">
+			<tr class="itemstatus-in cart-item">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
@@ -648,7 +649,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-onsale">
+			<tr class="itemstatus-in cart-item-onsale">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">On Sale Product Title</h4>
@@ -667,7 +668,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-onsale">
+			<tr class="itemstatus-in cart-item-onsale">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">On Sale Product Title</h4>
@@ -687,7 +688,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-default">
+			<tr class="itemstatus-in cart-item">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
@@ -707,7 +708,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-featured">
+			<tr class="itemstatus-in cart-item-featured">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">Featured Product Title</h4>
@@ -726,7 +727,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-default">
+			<tr class="itemstatus-in cart-item">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
@@ -746,7 +747,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-default">
+			<tr class="itemstatus-in cart-item">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">This is the Product Title</h4>
@@ -766,7 +767,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-featured">
+			<tr class="itemstatus-in cart-item-featured">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">Featured Product Title</h4>
@@ -785,7 +786,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-onsale">
+			<tr class="itemstatus-in cart-item-onsale">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">On Sale Product Title</h4>
@@ -805,7 +806,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-featured">
+			<tr class="itemstatus-in cart-item-featured">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">Featured Product Title</h4>
@@ -825,7 +826,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-onsale">
+			<tr class="itemstatus-in cart-item-onsale">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">On Sale Product Title</h4>
@@ -844,7 +845,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-onsale">
+			<tr class="itemstatus-in cart-item-onsale">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">On Sale Product Title</h4>
@@ -864,7 +865,7 @@
 </select></td>
 				<td class="item-total">$0.00</td>
 			</tr>
-			<tr class="itemstatus-in tab-onsale">
+			<tr class="itemstatus-in cart-item-onsale">
 				<td class="item-thumb"><img class="thumb" src="http://placehold.it/65x65&text=+" /></td>
 				<td class="item-product">
 					<h4 class="title">On Sale Product Title</h4>
@@ -901,6 +902,58 @@
 	</div>
 
 </div>
+
+<!-- Modal -->
+<div id="modalProductDetails" class="modal shop-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="productDetails" aria-hidden="true">
+  <div class="modal-header shop-modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    
+  </div>
+  <div class="modal-body shop-modal-body">
+    <!-- Modal -->
+<div id="modalProductDetailsThumb" class="modal shop-modal hide fade" tabindex="-1" role="dialog" aria-labelledby="productDetails" aria-hidden="true">
+  <div class="modal-header shop-modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body shop-modal-body">
+    
+
+	<div class="shop-product container-fluid">
+		<div class="row">
+			<div class="span2 col-product-media">
+				<div class="product-media">
+					<img class="product-thumb" src="http://placehold.it/200x200&text=+" />
+				</div>
+			</div>
+			<div class="span10 col-product-info">
+				<div class="product-info">
+					<h2 class="product-title">This is a Product Title w/ Thumbnail</h2>
+					<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+					<span class="label product-label label-in">in stock</span>
+					<span class="product-price">$19.99</span>
+					<div class="product-pricing">
+						<span class="product-qty"><select class="select input-mini">
+	<option value="">0</option>
+	<option value="">1</option>
+	<option value="">3</option>
+	<option value="">5</option>
+	<option value="">20</option>
+</select></span>
+						<a class="btn btn-primary btn-product-addtocart">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  </div>
+</div>
+  </div>
+ 
+</div>
+
 </div>
 
 		</div>
@@ -939,21 +992,21 @@
 	        e.preventDefault();
 	        //$(this).tab('show');
 
-	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).removeClass( "is-hidden" );
 	    })
 
 	    $('#shopCartTabNav-FAKE a[href="#featured-products-fake"]').click(function (e) {
 	        e.preventDefault();
 	        //$(this).tab('show');
 	        
-	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).removeClass( "is-hidden" );
 
-	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).addClass( "is-hidden" );
 	        
 	        
 	    })
@@ -961,12 +1014,12 @@
 	    $('#shopCartTabNav-FAKE a[href="#sale-products-fake"]').click(function (e) {
 	        e.preventDefault();
 	        //$(this).tab('show');
-			$( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+			$( ".tab-pane .cart-item" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).removeClass( "is-hidden" );
 
-	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).addClass( "is-hidden" );
 	    })
     });
 

@@ -7,25 +7,25 @@
 	<div class="span8 col-main">
 		<div class="page-header">
 			<h1>Product Cart Listing w/ Button <span>(Default Table Layout)</span></h1>
-			<p class="lead">5 column table w/ 65px thumbnail</p>
+			<p class="lead">Addition of the 'view details' button which will open up a modal.</p>
 		</div>
 		{% include "section-products" %}
 
 		<div class="page-header">
 			<h1>Product Cart Listing w/ Dividers <span>(Default Table Layout)</span></h1>
-			<p class="lead">Divider is just a ROW that spans the entire table w/ custom html</p>
+			<p class="lead">Divider is just a ROW that spans the entire table w/ custom html.</p>
 		</div>
 		{% include "section-products-rowheadings" %}
 
 		<div class="page-header">
 			<h1>Product Cart Listing w/ Tabs <span>(Default Table Layout)</span></h1>
-			<p class="lead">Using Bootstrap tabs. Separate TABLE per tab.</p>
+			<p class="lead">Splits the products into idividual tabs. In this scenario there is a table of products per tab. So if a product is assigned to the ALL tab, as well as the FEATURED tab, it would be rendered twice.</p>
 		</div>
 		{% include "section-products-tabs" %}
 
 		<div class="page-header">
 			<h1>Product Cart Listing w/ FAKE Tabs <span>(Default Table Layout)</span></h1>
-			<p class="lead">Bootstrap tabs, but each tab doesn't have a separate table!</p>
+			<p class="lead">In this scenario the products are listed in 1 table, and the tabs just hide, via jQuery/CSS the items that aren't assigned to the tab. This way there is only 1 instance of each product, no matter what tab you click. This is the method me, Tim and Rene discussed using to cut down on JS complexity.</p>
 		</div>
 		{% include "section-products-tabs-fake" %}
 	</div>
@@ -34,6 +34,9 @@
 	</div>
 
 </div>
+
+{% include "modal-productdetail" %}
+
 {% include "doc-foot" %}
 {% endblock %}
 
@@ -48,21 +51,21 @@
 	        e.preventDefault();
 	        //$(this).tab('show');
 
-	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).removeClass( "is-hidden" );
 	    })
 
 	    $('#shopCartTabNav-FAKE a[href="#featured-products-fake"]').click(function (e) {
 	        e.preventDefault();
 	        //$(this).tab('show');
 	        
-	        $( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).removeClass( "is-hidden" );
 
-	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).addClass( "is-hidden" );
 	        
 	        
 	    })
@@ -70,12 +73,12 @@
 	    $('#shopCartTabNav-FAKE a[href="#sale-products-fake"]').click(function (e) {
 	        e.preventDefault();
 	        //$(this).tab('show');
-			$( ".tab-pane .tab-default" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).removeClass( "is-hidden" );
-	        $( ".tab-pane .tab-onsale" ).removeClass( "is-hidden" );
+			$( ".tab-pane .cart-item" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).removeClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-onsale" ).removeClass( "is-hidden" );
 
-	        $( ".tab-pane .tab-default" ).addClass( "is-hidden" );
-	        $( ".tab-pane .tab-featured" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item" ).addClass( "is-hidden" );
+	        $( ".tab-pane .cart-item-featured" ).addClass( "is-hidden" );
 	    })
     });
 

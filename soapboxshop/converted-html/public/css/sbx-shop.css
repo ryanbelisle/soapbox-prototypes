@@ -1,4 +1,6 @@
-.shop * {
+.shop *,
+.shop *:before,
+.shop *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -307,6 +309,43 @@ input.input-creditcard {
 }
 input.input-ccv {
   background: url("../images/payment/payment-cards.png") no-repeat right -145px;
+}
+.shop-modal-header {
+  border-bottom: 0;
+  height: 30px;
+}
+.shop-modal-body {
+  overflow-y: visible;
+  max-height: none;
+  padding: 0px 30px 60px 45px;
+}
+.product-title {
+  color: #555;
+  font-size: 24px;
+  line-height: 1.3em;
+  margin-top: 2px;
+}
+.product-info .product-label {
+  display: inline-block;
+  margin: .6em 0;
+}
+.product-info .product-price {
+  display: block;
+  margin: .6em 0 .4em 0;
+  font-size: 48px;
+  line-height: 1.1em;
+}
+.product-pricing {
+  margin-top: 1em;
+}
+.product-pricing .product-qty {
+  display: inline-block;
+}
+.product-pricing .btn-primary {
+  margin-left: 20px;
+  height: 39px;
+  line-height: 39px;
+  padding: 0 20px;
 }
 .help-block {
   margin-top: 6px;
