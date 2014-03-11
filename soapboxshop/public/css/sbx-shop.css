@@ -310,6 +310,10 @@ input.input-creditcard {
 input.input-ccv {
   background: url("../images/payment/payment-cards.png") no-repeat right -145px;
 }
+.shop-product {
+  padding-left: 0;
+  padding-right: 0;
+}
 .shop-modal-header {
   border-bottom: 0;
   height: 30px;
@@ -317,7 +321,7 @@ input.input-ccv {
 .shop-modal-body {
   overflow-y: visible;
   max-height: none;
-  padding: 0px 30px 60px 45px;
+  padding: 0px 45px 60px 35px;
 }
 .product-title {
   color: #555;
